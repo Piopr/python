@@ -8,8 +8,9 @@ lines = file.readlines()
 mapa={}
 for i in lines:
     mapa[i.split("\t")[0]]=i.split("\t")[1]
-try:
-    var = input("Podaj se cos")
-    print(mapa[var])
-except KeyError:
-    print("Nie ma takiego slowa")
+while 1:
+    try:
+        var = input("Podaj se cos")
+        print(mapa[var])
+    except KeyError:
+        print("Nie ma takiego slowa")
